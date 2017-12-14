@@ -1,0 +1,29 @@
+{
+  "response": {
+    "legislator": {
+      "@attributes": {
+        "cid": "N00031938",
+        "firstlast": "Justin Amash",
+        "lastname": "AMASH",
+        "party": "R",
+        "office": "MI03",
+        "gender": "M",
+        "first_elected": "2010",
+        "exit_code": "0",
+        "comments": "",
+        "phone": "202-225-3831",
+        "fax": "202-225-5144",
+        "website": "http://amash.house.gov",
+        "webform": "https://amash.house.gov/contact-me/email-me",
+        "congress_office": "114 Cannon House Office Building",
+        "bioguide_id": "A000367",
+        "votesmart_id": "105566",
+        "feccandid": "H0MI03126",
+        "twitter_id": "RepJustinAmash",
+        "youtube_url": "https://youtube.com/repjustinamash",
+        "facebook_id": "repjustinamash",
+        "birthdate": "1980-04-18"
+      }
+    }
+  }
+}

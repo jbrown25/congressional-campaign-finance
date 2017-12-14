@@ -1,0 +1,210 @@
+html,
+body {
+	min-height: 100%;
+	min-height: 100vh;
+}
+
+p {
+	font-size: 20px;
+}
+
+.back-btn-container {
+	padding: 10px;
+}
+
+.navbar,
+.navbar-default {
+	border: none;
+	box-shadow: $light-shadow;
+	margin: 30px 0;
+}
+
+.page-content-container {
+	background: $white;
+	box-shadow: $light-shadow;
+	padding: $gutter;
+}
+
+.page-chart-container {
+	background: $white;
+	box-shadow: $light-shadow;
+	padding: $gutter;
+}
+
+.header-content-container {
+	//@extend .page-content-container;
+	padding: $gutter;
+}
+
+.header-chart-container {
+	//@extend .page-chart-container;
+	padding: $gutter;
+}
+
+.site-header {
+	margin-bottom: 30px;
+	background: #fff;
+	box-shadow: $light-shadow;
+}
+
+.site-footer {
+	background: #333;
+	padding: $gutter 0;
+	margin-top: 30px;
+	span {
+		color: $white;
+	}
+}
+
+.search-page-container {
+	position: fixed;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	background: #fff;
+	z-index: 999;
+}
+
+.search-page {
+	position: absolute;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	z-index: 1000;
+	@extend .flex-center;
+	background: url('/img/flag.jpeg');
+	background-size: cover;
+
+	&::before {
+		content: "";
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		background: #000;
+		z-index: -1;
+		opacity: .45;
+	}
+
+	h1 {
+		color: $white;
+		margin-bottom: 25px;
+		font-size: 45px;
+		letter-spacing: 5px;
+		font-weight: 300;
+		text-shadow: 1px 1px 1px #333;
+	}
+
+	.btn-primary {
+		margin-top: -4px;
+		border-radius: 0 $search-border-radius $search-border-radius 0;
+		font-size: 18px;
+		padding: 10px 15px;
+	}
+}
+
+.search-page-content {
+	text-align: center;
+	padding-bottom: 30px;
+}
+
+.searchbar-container {
+	display: inline-block;
+	position: relative;
+}
+
+.select-search-box {
+	display: inline-block;
+	min-width: 300px;
+}
+
+.select-search-box__search {
+	@extend .form-control;
+	border-radius: $search-border-radius 0 0 $search-border-radius;
+	height: 50px;
+	font-size: 18px;
+}
+
+/** The option list should not be visible by default */
+.select-search-box__select {
+    display: none;
+}
+ 
+/** If it's a multiple select, you can style it with this selector */
+.select-search-box--multiple .select-search-box__select {
+    display: block;
+}
+
+/** The list receives the modifier class "display" when the select has focus */
+.select-search-box__select--display {
+    display: block;
+    position: absolute;
+    left: 0;
+    right: 0;
+    background: #fff;
+    //border-radius: 0 0 $search-border-radius $search-border-radius;
+    border-radius: $search-border-radius;
+}
+ 
+/** UL with the options */
+.select-search-box__options {
+	list-style: none;
+	padding-left: 5px;
+	max-height: 200px;
+	overflow-y: auto;
+	margin-bottom: 0;
+	text-align: left;
+}
+ 
+/** The option (LI), look at the state classes below */
+.select-search-box__option {
+	cursor: pointer;
+	font-size: 18px;
+	line-height: 40px;
+	border-bottom: 1px solid #d1d1d1;
+
+	&:hover {
+		background: rgba(0, 0, 0, 0.1);
+	}
+}
+ 
+/** When the option has been selected */
+.select-search-box__option--selected {
+	cursor: no-drop;
+
+	&::after {
+		content: "\f00c";
+		font-family: FontAwesome;
+		margin-left: 10px;
+	}
+}
+
+/** When the option is selected (when navigation with the arrow keys, up/down) */
+.select-search-box__option--hover, .select-search-box__option:hover {
+
+}
+
+.candidate-bio-info {
+	p {
+		margin-bottom: 5px;
+	}
+}
+
+.social {
+	ul {
+		padding-left: 0;
+		list-style: none;
+
+		li {
+			display: inline-block;
+			margin-right: 20px;
+		}
+	}
+
+	a {
+		font-size: 32px;
+	}
+}
